@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxFitnessGym-PayOnline</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        width: 100%;
+        height: 100%;
+    }
+    .backofpay {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805)), url("/pricing/priceimage/paybackground.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .joinhere {
+        width: 20vw;
+        height: 70vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .joinhere img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    @media (max-width:800px) {
+        .joinhere{
+            width: 60vw;
+        }
+    }
+</style>
+
+<body>
+    <div class="backofpay">
+        <div class="joinhere">
+            <img src="/images/PayHere.png" alt="Some Isseu is ocurred so please try again later">
+        </div>
+    </div>
+</body>
+
+</html>

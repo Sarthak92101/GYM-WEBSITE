@@ -1,0 +1,1007 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Dancing+Script:wght@700&family=Pacifico&family=Poppins&family=Public+Sans:wght@700&family=Roboto+Condensed&family=Roboto+Slab&family=Roboto:wght@900&family=Rubik&family=Teko:wght@400;500&family=Waterfall&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Kautiva";
+}
+
+.backimages {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.mySlides {
+    width: 100%;
+    height: 90vh;
+    display: none;
+    transition: all ease 2s;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#slide4 {
+    object-fit: fill;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.822));
+    ;
+    font-size: 2em;
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.next {
+    right: 0;
+}
+
+.back {
+    width: 100%;
+    min-height: 10vh;
+    position: absolute;
+    top: 3%;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 5vw;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 2.5vw;
+    color: rgb(239, 77, 59);
+    font-family: "kajiro";
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+}
+
+.logo h2:hover {
+    letter-spacing: 2px;
+}
+
+.logo img {
+    height: 8vh;
+    border-radius: 50%;
+}
+
+.mainmenu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+}
+
+.mobilemenu,
+#cancel {
+    display: none;
+}
+
+.menu ul li a:hover {
+    color: rgb(34, 243, 11);
+    font-size: 1.5vw;
+    border-bottom: 2px solid rgb(240, 59, 250);
+}
+
+.search input {
+    padding: 5px 28px;
+    color: white;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+}
+
+.login a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: rgb(239, 77, 59);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.home {
+    width: 50%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    color: white;
+    font-family: "poppins";
+}
+
+.mainwelcome {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(360deg, rgba(46, 44, 44, 0.821), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.839)), url("/images/storybackimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3vh 5vw;
+    overflow: hidden;
+}
+
+main h1 {
+    font-size: 3.5vw;
+    padding-top: 2vh;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(239, 77, 59);
+}
+
+.mainwelcome .story {
+    width: 50%;
+    min-height: 80vh;
+    margin-top: 6vh;
+}
+
+.story p {
+    color: white;
+    opacity: 0.7;
+    margin-top: 5vh;
+}
+
+.story p:nth-child(1) {
+    opacity: 1;
+}
+
+.story .substory {
+    width: 100%;
+    min-height: auto;
+    margin-top: 5vh !important;
+    display: flex;
+    align-items: flex-start;
+    gap: 1vw;
+}
+
+.substory h4 {
+    color: #fff;
+}
+
+.substory .symbol {
+    width: 20%;
+    min-height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.symbol img {
+    width: 100%;
+}
+
+.symbol i {
+    font-size: 5vw;
+    color: rgb(239, 77, 59);
+}
+
+.substory .symboldescrip p {
+    margin-top: 1.5vh !important;
+}
+
+.symboldescrip h4 {
+    text-transform: uppercase;
+}
+
+.classis {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2vh 5vw;
+    background-image: linear-gradient(360deg, rgba(46, 44, 44, 0.638), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.597)), url("/images/classis.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.classis .classisflex {
+    width: 100%;
+    min-height: 80vh;
+    margin: 6vh auto;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.classisflex .flxes {
+    width: 33.33%;
+    height: 80vh;
+}
+
+.flxes .fleximage {
+    width: 100%;
+    height: 50%;
+    background-color: #000;
+}
+
+#yoga {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.fleximage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#class3 img {
+    object-fit: contain;
+}
+
+.flxes .flexdes {
+    width: 100%;
+    height: 50%;
+    padding: 4vh 3vw;
+    gap: 1vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00000071;
+}
+
+.flexdes h2 {
+    color: rgb(239, 77, 59);
+    text-transform: uppercase;
+}
+
+.flexdes h5 {
+    font-size: 1.5vw;
+}
+
+.flexdes p {
+    font-family: "poppins";
+    font-size: 1vw;
+    margin-top: 2vh;
+}
+
+.advantage {
+    width: 100%;
+    min-height: 100vh;
+    padding: 3vh 5vw;
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805)), url("/images/advange.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advantage .advantages {
+    width: 100%;
+    min-height: 80vh;
+    margin: 5vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantages .advanleft {
+    width: 45%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.advantages .advanright {
+    width: 45%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.advantages .advan {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.advan .advansym {
+    width: 25%;
+    min-height: 15vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(239, 77, 59);
+}
+
+.advansym i {
+    font-size: 3vw;
+}
+
+.advan .advandes {
+    width: 70%;
+    font-family: "poppins";
+    color: white;
+    height: auto;
+}
+
+.advandes h4 {
+    font-size: 1.8vw;
+    font-family: "poppins";
+    color: rgb(239, 77, 59);
+    text-transform: uppercase;
+    margin-bottom: 1.5vh;
+}
+
+.advandes p {
+    font-size: 1.1vw;
+}
+
+.member {
+    width: 100%;
+    min-height: 35vh;
+}
+
+.member .memberdes {
+    width: 100%;
+    min-height: 35vh;
+    padding: 0 5vw;
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805)), url("/images/story.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.memberdes .des {
+    width: 10%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.des h1 {
+    text-decoration: none;
+    color: rgb(239, 77, 59);
+
+}
+
+.des i {
+    font-size: 2vw;
+}
+
+.des p {
+    font-size: 1vw;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.success {
+    width: 100%;
+    min-height: 120vh;
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.822)), url("/images/story.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.success .successdes {
+    width: 60%;
+    background-color: rgba(52, 52, 52, 0.823);
+    margin: 10vh auto;
+    margin-top: 15vh;
+    min-height: 80vh;
+    position: relative;
+}
+
+.successdes .successslides {
+    width: 100%;
+    min-height: 80vh;
+    display: none;
+    position: relative;
+}
+
+.successslides .secimage {
+    width: 15%;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.secimage img {
+    width: 100%;
+    height: 15vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.successslides .sucdes {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.sucdes h1 {
+    padding-top: 16vh;
+    font-size: 2.3vw;
+    text-decoration: none;
+    font-family: "poppins";
+}
+
+.sucdes p {
+    font-size: 2vw;
+    padding: 0 5vw;
+    margin-top: 5vh;
+    color: white;
+}
+
+.sucdes h3 {
+    font-family: "poppins";
+    color: rgb(239, 77, 59);
+    font-size: 2vw;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #f7f700e2;
+}
+
+.sisthdiv {
+    width: 100%;
+    min-height: 150vh;
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805)), url("/images/advange.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 5vw;
+}
+
+.sisthdiv .trainer {
+    width: 80%;
+    min-height: 80vh;
+    margin: 8vh auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4vw;
+}
+
+.trainer .trainers {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+}
+
+.trainers .trainerimage {
+    width: 50%;
+    min-height: 40vh;
+    background-color: #000;
+}
+
+.trainerimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trainers .trainerdes {
+    width: 50%;
+    min-height: 40vh;
+    background-color: rgba(0, 0, 0, 0.761);
+}
+
+.trainerdes h1 {
+    font-size: 1.9vw;
+    text-decoration: none;
+    margin: 3vh;
+    text-align: center;
+}
+
+.trainerdes h5 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+.trainerdes p {
+    font-size: 1.2vw;
+    text-align: center;
+    padding: 4vh;
+    color: #bbb;
+    font-family: "gilroy";
+}
+
+.footer {
+    width: 100%;
+    min-height: 40vh;
+    padding: 2vh 5vw;
+    padding-bottom: 0%;
+    background-color: #000000e2;
+    color: #fff;
+}
+
+.firstfooter {
+    width: 100%;
+    display: flex;
+}
+
+.firstfooter h1 {
+    width: 50%;
+    min-height: 30vh;
+    font-size: 20vw;
+    letter-spacing: 2px;
+    line-height: 0.5;
+    color: rgb(239, 77, 59);
+    font-family: "kajiro";
+    font-variant: small-caps;
+}
+
+.footerlinks {
+    width: 50%;
+    min-height: 30vh;
+    display: flex;
+    gap: 4vw;
+}
+
+.footerlinks h2 {
+    color: rgb(239, 77, 59);
+    text-transform: capitalize;
+    margin-bottom: 2vh;
+}
+
+.footerlinks a {
+    text-decoration: none;
+    width: fit-content;
+    color: rgb(232, 227, 158);
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+}
+
+.footerlinks a:hover {
+    color: rgba(0, 255, 0, 0.784);
+    scale: 1.2 2 2.5;
+    font-stretch: expanded;
+
+}
+
+.footerlinklft {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vh;
+}
+
+.footerlinkright {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    text-transform: capitalize;
+}
+
+.footerlinkright span {
+    color: #ffffff;
+}
+
+.footerlinkright i {
+    margin-right: 0.2vw;
+}
+
+.footerlinkright .des {
+    color: #00ffdd !important;
+}
+
+.mainfooter {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 2vh 0;
+    margin-top: 5.5vw;
+    background-color: #000;
+}
+
+.mainfooter span {
+    color: rgb(239, 77, 59);
+    text-transform: uppercase;
+}
+
+/* header adjust*/
+@media (max-width: 600px) {
+    .backimages {
+        height: 60vh;
+        position: relative;
+    }
+
+    .mySlides {
+        height: 60vh;
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    #slide4 {
+        object-fit: fill;
+    }
+
+    .back {
+        min-height: 10vh;
+        top: 3%;
+    }
+
+    .logo h2 {
+        font-size: 1.5vh;
+        margin-left: 1vh;
+    }
+
+    .logo img {
+        height: 5vh;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .login {
+        margin-left: 2vh;
+    }
+
+    .mobilemenu{
+        display: block; 
+    }
+    .click {
+        display: block;
+    }
+
+    .mobilemenubar {
+        width: 100vw;
+        height: auto;
+        background-color: #000000e4;
+        position: absolute;
+        top: 10vh;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobilemenubar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5vh;
+    }
+
+    .mobilemenubar ul li {
+        list-style: none;
+    }
+
+    .mobilemenubar a {
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+}
+
+/* story adjust*/
+@media (max-width: 600px) {
+    main h1 {
+        font-size: 3.5vh;
+    }
+
+    .mainwelcome .story {
+        width: 100%;
+    }
+
+    .substory .symbol {
+        width: 100%;
+    }
+
+    .symbol img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #personaltrainer {
+        margin-right: 4vh;
+    }
+
+    .symbol i {
+        font-size: 8vh;
+        margin-right: 5vh;
+    }
+}
+
+/* classis adjust*/
+@media (max-width: 600px) {
+    .classis .classisflex {
+        flex-direction: column;
+    }
+
+    .classisflex .flxes {
+        width: 100%;
+        height: auto;
+    }
+
+    #yoga {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flxes .flexdes {
+        height: 30%;
+    }
+
+    .flexdes h2 {
+        font-size: 4vh;
+    }
+
+    .flexdes h5 {
+        font-size: 1.5vh;
+    }
+
+    .flexdes p {
+        font-size: 1vh;
+    }
+}
+
+/* advantage adjust*/
+@media (max-width: 600px) {
+
+    .advantage {
+        min-height: 60vh;
+        padding: 1vh 5vw;
+    }
+
+    .advantages .advanleft {
+        min-height: 60vh;
+    }
+
+    .advantages .advanright {
+        min-height: 60vh;
+    }
+
+    .advantage .advantages {
+        min-height: 60vh;
+        margin: 2vh 0;
+        margin-top: 4vh;
+    }
+
+    .advantages .advan {
+        height: 5vh;
+    }
+
+    .advan .advansym {
+        width: 25%;
+        min-height: 5vh;
+    }
+
+    .advansym i {
+        font-size: 3vh;
+    }
+
+    .advan .advandes {
+        width: 70%;
+        height: 10vh;
+    }
+
+    .advandes h4 {
+        font-size: 1.4vh;
+        margin-bottom: 1vh;
+    }
+
+    .advandes p {
+        font-size: 1.1vh;
+    }
+}
+
+/* success adjust*/
+@media (max-width: 600px) {
+    .success {
+        min-height: 100vh;
+        padding-top: 6vh;
+    }
+
+    .success .successdes {
+        width: 80%;
+        margin: 10vh auto;
+        margin-top: 15vh;
+        min-height: 60vh;
+    }
+
+    .successdes .successslides {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    .successslides .secimage {
+        width: 40%;
+    }
+
+    .secimage img {
+        width: 100%;
+        height: 15vh;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .successslides .sucdes {
+        width: 100%;
+        min-height: 40vh;
+        gap: 2vh;
+    }
+
+    .sucdes h1 {
+        padding-top: 12vh;
+        font-size: 2.3vh;
+    }
+
+    .sucdes p {
+        font-size: 2.5vh;
+        margin: 5vh 0vh;
+    }
+
+    .sucdes h3 {
+        font-size: 2.5vh;
+    }
+
+    .dot {
+        margin: 1vh 2px;
+    }
+
+    .active {
+        background-color: #f700da;
+    }
+}
+
+/*trainers adjust*/
+@media (max-width: 600px) {
+    .sisthdiv {
+        min-height: 185vh;
+    }
+
+    .sisthdiv .trainer {
+        width: 95%;
+        min-height: 80vh;
+        margin: 4vh auto;
+        grid-template-columns: 1fr;
+    }
+
+    .trainer .trainers {
+        width: 100%;
+    }
+
+    .trainers .trainerimage {
+        width: 60%;
+        min-height: 40vh;
+    }
+
+    #trainer2 {
+        flex-direction: row-reverse;
+    }
+
+    #trainer4 {
+        flex-direction: row-reverse;
+    }
+
+    .trainers .trainerdes {
+        width: 40%;
+    }
+
+    .trainerdes h1 {
+        font-size: 2.5vh;
+        margin: 2vh;
+    }
+
+    .trainerdes h5 {
+        font-size: 2vh;
+    }
+
+    .trainerdes p {
+        font-size: 1.5vh;
+        padding: 2vh;
+    }
+}
+
+/*footer adjust  */
+@media (max-width: 1000px) {
+    .firstfooter {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstfooter h1 {
+        width: 100%;
+        text-align: center;
+        min-height: 5vh;
+        font-size: 10vw;
+    }
+
+    .footerlinks {
+        width: 100%;
+        min-height: 30vh;
+        flex-direction: column;
+    }
+
+    .footerlinks h2 {
+        margin-bottom: 1vh;
+    }
+
+    .footerlinklft {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4vh;
+    }
+
+    .footerlinkright {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4vh;
+    }
+
+    .mainfooter {
+        font-size: 3vw;
+    }
+}

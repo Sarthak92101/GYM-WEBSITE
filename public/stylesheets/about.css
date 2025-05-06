@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Dancing+Script:wght@700&family=Pacifico&family=Poppins&family=Public+Sans:wght@700&family=Roboto+Condensed&family=Roboto+Slab&family=Roboto:wght@900&family=Rubik&family=Teko:wght@400;500&family=Waterfall&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Kautiva";
+}
+.backimages{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+.mySlides {
+    width: 100%;
+    height: 90vh;
+    display: none;
+    transition:all ease 2s;
+  }
+
+  .mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #slide4{
+    object-fit: fill;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.822));;
+    font-size: 2em;
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: white;
+  }
+
+
+  .next {
+    right: 0;
+  }
+.back{
+    width: 100%;
+    min-height: 10vh;
+    position: absolute;
+    top: 3%;
+}
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 5vw;
+    color: white;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.logo h2{
+    font-size: 2.5vw;
+    color: rgb(239, 77, 59);
+    font-family: "kajiro";
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+}
+.logo h2:hover{
+    letter-spacing: 2px;
+}
+.logo img {
+    height: 8vh;
+    border-radius: 50%;
+}
+.mainmenu{
+    display: flex;
+    gap: 30px;
+}
+.menu ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+}
+
+.menu ul li a:hover {
+    color: rgb(34, 243, 11);
+    font-size: 1.5vw;
+    border-bottom: 2px solid rgb(240, 59, 250);
+}
+.search input{
+    padding: 5px 28px;
+    color: white;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+}
+.login a{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: rgb(239, 77, 59);
+    padding: 5px;
+    border-radius: 10px;
+}
+.home{
+    width: 50%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    color: white;
+    font-family: "poppins";
+}
+.mobilemenu,
+#cancel {
+    display: none;
+}
+
+.about{
+    width: 100%;
+    min-height: 110vh;
+    padding: 2vh 5vw;
+    background-image: linear-gradient(360deg, rgba(46, 44, 44, 0.638), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.597)), url("/images/classis.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.about h1{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline dashed;
+    font-style: italic;
+    font-size: 3.5vw;
+    color: rgb(239, 77, 59);    
+    margin: 2vh 0;
+    font-family: "gilroy";
+}
+.about .aboutdescription{
+    width: 100%;
+    margin-top: 8vh;
+    padding: 0 2vw;
+    font-family: "gilroy";
+}
+.aboutdescription p{
+    text-align: center;
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+}
+.aboutdescription .aboutpoints{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 4vh 0;
+}
+.aboutpoints h6{
+    font-size: 1.5vw;
+    color: #00ffdd;
+}
+.ownerimage{
+    margin: 5vh auto;
+    width: 15%;
+    height: 20vh;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.ownerimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer{
+    width: 100%;
+    min-height: 40vh;
+    padding: 2vh 5vw;
+    padding-bottom: 0%;
+    background-color: #000000e2;
+    color: #fff;
+}
+.firstfooter{
+    width: 100%;
+    display: flex;
+}
+.firstfooter h1{
+    width: 50%;
+    min-height: 30vh;
+    font-size: 20vw;
+    letter-spacing: 2px;
+    line-height: 0.5;
+    color: rgb(239, 77, 59);
+    font-family: "kajiro";
+    font-variant:small-caps;
+}
+.footerlinks{
+    width: 50%;
+    min-height: 30vh;
+    display: flex;
+    gap: 4vw;
+}
+.footerlinks h2{
+    color: rgb(239, 77, 59);
+    text-transform: capitalize;
+    margin-bottom: 2vh;
+}
+.footerlinks a{
+    text-decoration: none;
+    width: fit-content;
+    color: rgb(232, 227, 158);
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+}
+.footerlinks a:hover{
+    color: rgba(0, 255, 0, 0.784);
+    scale: 1.2 2 2.5;
+    font-stretch: expanded;
+
+}
+.footerlinklft{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vh;
+}
+.footerlinkright{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    text-transform: capitalize;
+}
+.footerlinkright span{
+    color: #ffffff;
+}
+.footerlinkright i{
+    margin-right: 0.2vw;
+}
+.footerlinkright .des{
+    color: #00ffdd !important;
+}
+.mainfooter{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 2vh 0;
+    margin-top: 5.5vw;
+    background-color: #000;
+}
+.mainfooter span{
+    color: rgb(239, 77, 59);
+    text-transform: uppercase;
+}
+
+/* header adjust*/
+@media (max-width: 600px) {
+    .backimages {
+        height: 60vh;
+        position: relative;
+    }
+
+    .mySlides {
+        height: 60vh;
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    #slide4 {
+        object-fit: fill;
+    }
+
+    .back {
+        min-height: 10vh;
+        top: 3%;
+    }
+
+    .logo h2 {
+        font-size: 1.5vh;
+        margin-left: 1vh;
+    }
+
+    .logo img {
+        height: 5vh;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .login {
+        margin-left: 2vh;
+    }
+
+    .mobilemenu{
+        display: block; 
+    }
+    .mobilemenubar{
+        display: none;
+    }
+
+    .mobilemenubar {
+        width: 100vw;
+        height: auto;
+        background-color: #000000e4;
+        position: absolute;
+        top: 10vh;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobilemenubar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5vh;
+    }
+
+    .mobilemenubar ul li {
+        list-style: none;
+    }
+
+    .mobilemenubar a {
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+}
+
+
+
+/* header adjust*/
+@media (max-width: 900px) {
+    .about h1{
+        font-size: 3.5vh;
+    }
+    .about .aboutdescription{
+        width: 100%;
+        margin-top: 8vh;
+        padding: 0 2vw;
+        font-family: "gilroy";
+    }
+    .aboutdescription p{
+        font-size: 1.5vh;
+    }
+    .aboutpoints h6{
+        font-size: 1.5vh;
+    }
+    .ownerimage{
+        width: 40%;
+        height: 20vh;
+    } 
+}
+
+
+/*footer adjust  */
+@media (max-width: 1000px) {
+    .firstfooter {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstfooter h1 {
+        width: 100%;
+        text-align: center;
+        min-height: 5vh;
+        font-size: 10vw;
+    }
+
+    .footerlinks {
+        width: 100%;
+        min-height: 30vh;
+        flex-direction: column;
+    }
+
+    .footerlinks h2 {
+        margin-bottom: 1vh;
+    }
+
+    .footerlinklft {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4vh;
+    }
+
+    .footerlinkright {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4vh;
+    }
+
+    .mainfooter {
+        font-size: 3vw;
+    }
+}

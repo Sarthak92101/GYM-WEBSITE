@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxFitnessGym</title>
+    <link rel="stylesheet" href="/stylesheets/price.css">
+</head>
+<body>
+    
+  <div class="mainback">
+    <div class="backimages">
+      <div class="mySlides">
+        <img src="/images/slide1.jpg" alt="Image 1">
+      </div>
+
+      <div class="mySlides">
+        <img src="/images/slide2.jpg" alt="Image 2">
+      </div>
+
+      <div class="mySlides">
+        <img src="/images/slide3.png" alt="Image 3">
+      </div>
+
+      <div class="mySlides">
+        <img id="slide4" src="/images/backimage2.png" alt="Image 4">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+  <div class="back">
+    <nav>
+      <div class="logo">
+        <img src="/images/lgo.png" alt="">
+        <h2>max fitness gym</h2>
+      </div>
+      <div class="mainmenu">
+        <div class="menu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/price">Plans</a></li>
+            <li><a href="#footer">contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="mobilemenu">
+          <div class="click">
+            <i class="ri-menu-fill" id="click"></i>
+          </div>
+          <div class="mobilemenubar">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/price">Plans</a></li>
+              <li><a href="#footer">contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="login">
+          <a href="/logout">log out</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <div class="mainprice">
+        <h1>Price and plans</h1>
+        <div class="plans">
+            <div class="plan">
+                <div class="planimage">
+                    <img src="/images/class1.jpg" alt="">
+                </div>
+                <div class="plandes">
+                    <h2>body building</h2>
+                    <h3>Price -> $70</h3>
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Experienced instructors</li>
+                        <li>Personalized workouts</li>
+                        <li>Nutrition guidance</li>
+                        <li>Progress tracking</li>
+                        <li>Flexible class schedule</li>
+                        <li>and many more</li>
+                    </ul>
+                    <a href="/pay">Join now</a>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="planimage">
+                    <img src="/images/class2.jpg" alt="">
+                </div>
+                <div class="plandes">
+                    <h2>yoga classes</h2>
+                    <h3>Price ==> $40</h3>
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Certified yoga instructors</li>
+                        <li>Diverse yoga styles</li>
+                        <li>Relaxing and rejuvenating sessions</li>
+                        <li>Mind-body wellness focus</li>
+                        <li>Mat and equipment provided</li>
+                    </ul>
+                    <a href="/pay">Join now</a>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="planimage">
+                    <img src="/images/class3.jpg" alt="">
+                </div>
+                <div class="plandes">
+                    <h2>consultation</h2>
+                    <h3>Price ==> <span>free</span></h3>
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Personalized fitness assessment</li>
+                        <li>Goal-setting and planning</li>
+                        <li>Expert guidance from trainers</li>
+                        <li>Workout recommendations</li>
+                        <li>Opportunity to ask questions and address concerns.</li>
+                    </ul>
+                    <a href="/pay">Join now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+  
+<footer>
+
+  <div class="footer" id="footer">
+    <div class="firstfooter">
+      <div class="footerlinks">
+        <div class="footerlinklft">
+          <h2>navigation links</h2>
+          <a href="/">home</a>
+          <a href="/about">about</a>
+          <a href="#classes">classes</a>
+          <a href="/price">plans</a>
+        </div>
+        <div class="footerlinkright">
+          <h2>contact us</h2>
+          <span><i class="ri-map-pin-line"></i> location : <span class="des">
+              Max Fitness Gym
+              123 Street No, California,
+              USA
+            </span></span>
+          <span><i class="ri-phone-line"></i> phone number: <span class="des">+1234567890</span> </span>
+          <span><i class="ri-mail-line"></i> email id: <span
+              class="des">maxfittnessgymofficial@gmail.com</span></span>
+        </div>
+      </div>
+      <!-- <h1>maxfitnessgym</h1> -->
+    </div>
+    <div class="mainfooter">
+      @2023, all rights are reserved. made by <span>SARTHAK & ROHIT</span>
+    </div>
+  </div>
+</footer>
+
+  <script>
+var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        function textdeco() {
+            let a = document.querySelector(".planjoinlink");
+            a.style.textDecoration = "underline";
+        }
+
+
+        function showmenu() {
+            let menu = document.querySelector(".mobilemenubar");
+            let click = document.querySelector("#click");
+            click.addEventListener("click", function () {
+                if (menu.style.display == "block") {
+                    menu.style.display = "none";
+                    gsap.from(".mobilemenubar", {
+                        x: -100,
+                        duration: 1,
+                        stagger: 0.1
+                    })
+                }
+                else {
+                    menu.style.display = "block";
+                }
+            })
+        }
+        showmenu()
+  </script>
+</body>
+</html>

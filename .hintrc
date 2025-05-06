@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "min-height: fit-content",
+          "width: fit-content",
+          "scale",
+          "min-height: auto"
+        ]
+      }
+    ]
+  }
+}

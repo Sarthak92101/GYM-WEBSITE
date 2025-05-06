@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="registrationform">
+            <h1>Join Our Gym Today!</h1>
+            <form action="/register"  method="post">
+                <div class="details">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="details">
+                    <label for="email">Email ID:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="details">
+                    <label for="username">UserName: </label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="details">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="subreset">
+                    <button type="submit" id="submit">Register</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/profile.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <title>MaxFitnessGym</title>
+</head>
+
+<body>
+  <div class="mainback">
+    <div class="backimages">
+      <div class="mySlides">
+        <img src="/images/slide1.jpg" alt="Image 1">
+      </div>
+
+      <div class="mySlides">
+        <img src="/images/slide2.jpg" alt="Image 2">
+      </div>
+
+      <div class="mySlides">
+        <img src="/images/slide3.png" alt="Image 3">
+      </div>
+
+      <div class="mySlides">
+        <img id="slide4" src="/images/backimage2.png" alt="Image 4">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+  <div class="back">
+    <nav>
+      <div class="logo">
+        <img src="/images/lgo.png" alt="">
+        <h2>max fitness gym</h2>
+      </div>
+      <div class="mainmenu">
+        <div class="menu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="#classes">classes</a></li>
+            <li><a href="/price">Plans</a></li>
+            <li><a href="#footer">contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="mobilemenu">
+          <div class="click">
+            <i class="ri-menu-fill" id="click"></i>
+          </div>
+          <div class="mobilemenubar">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="#classes">classes</a></li>
+              <li><a href="/price">Plans</a></li>
+              <li><a href="#footer">contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="login">
+          <a href="/logout">log out</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <div class="mainwelcome">
+      <h1>our story</h1>
+      <div class="story">
+        <p>Max Fitness Gym, a premier fitness haven located in the heart of our community, is the brainchild of the
+          legendary fitness guru, Max Irons. With a passion for health and an unwavering commitment to transforming
+          lives, Max Irons embarked on a remarkable journey that led to the establishment of this renowned fitness hub.
+        </p>
+        <p>Max's story is one of personal transformation and dedication. Starting as a fitness enthusiast, he battled
+          his own fitness challenges and overcame them through sheer determination and expert guidance. Inspired by his
+          own transformation, Max set out to create a space where others could embark on their own remarkable journeys
+          to wellness and strength.</p>
+        <div class="substory">
+          <div class="symbol">
+            <img src="/images/open door policy.png" alt="">
+          </div>
+          <div class="symboldescrip">
+            <h4>open door policy</h4>
+            <p>The gym management and staff are readily accessible to members and encourage open communication.</p>
+          </div>
+        </div>
+        <div class="substory">
+          <div class="symbol"><i class="ri-first-aid-kit-line"></i></div>
+          <div class="symboldescrip">
+            <h4>fully insured</h4>
+            <p>the gym having comprehensive insurance coverage. This insurance is essential to protect the gym, its
+              members, and its staff in case of accidents, injuries, or unforeseen events.</p>
+          </div>
+        </div>
+        <div class="substory">
+          <div class="symbol" id="personaltrainer">
+            <img src="/images/Trainer Logo.png" alt="">
+          </div>
+          <div class="symboldescrip">
+            <h4>personal trainer</h4>
+            <p>Max Fitness Gym is proud to offer a team of highly qualified and experienced personal trainers to assist
+              our members in achieving their fitness goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="classis" id="classes">
+      <h1>popular classis</h1>
+      <div class="classisflex">
+        <div class="flxes">
+          <div class="fleximage">
+            <img src="/images/class1-removed.jpg" alt="">
+          </div>
+          <div class="flexdes">
+            <h2>body building</h2>
+            <h5><i class="ri-time-line"></i> man - sat | 9:00 to 10:00
+            </h5>
+            <p>At Max Fitness Gym, we understand the pursuit of strength, muscle, and sculpted physiques, which is why
+              we offer exceptional bodybuilding classes that cater to both beginners and seasoned weightlifters.</p>
+          </div>
+        </div>
+        <div class="flxes" id="yoga">
+          <div class="fleximage">
+            <img src="/images/class2-removebg.jpg" alt="">
+          </div>
+          <div class="flexdes">
+            <h2>yoga classes</h2>
+            <h5><i class="ri-time-line"></i> man - sat | 9:00 to 10:00</h5>
+            <p>At Max Fitness Gym, our yoga classes offer tranquility and balance. Led by experienced instructors, our
+              serene environment fosters physical and mental well-being for all levels of practitioners. Join us today.
+            </p>
+          </div>
+        </div>
+        <div class="flxes">
+          <div class="fleximage" id="class3">
+            <img src="/images/trainer1.png" alt="">
+          </div>
+          <div class="flexdes">
+            <h2>consultation</h2>
+            <h5><i class="ri-time-line"></i> man - sat | 9:00 to 10:00</h5>
+            <p>At Max Fitness Gym, we prioritize your fitness journey. Our expert consultations ensure your goals are
+              understood and create a personalized path to success, backed by professional guidance and support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="advantage">
+      <h1>our advantages</h1>
+      <div class="advantages">
+        <div class="advanleft">
+          <div class="advan">
+            <div class="advansym"><i class="ri-guide-line"></i></div>
+            <div class="advandes">
+              <h4>Expert Guidance</h4>
+              <p>Our gym is staffed with certified and experienced trainers who provide expert guidance, ensuring you
+                perform exercises correctly and safely.
+              </p>
+            </div>
+          </div>
+          <div class="advan">
+            <div class="advansym"><i class="ri-user-shared-2-line"></i></div>
+            <div class="advandes">
+              <h4>Personalized Workouts</h4>
+              <p>We tailor fitness plans to your specific goals and fitness level, helping you achieve results more
+                efficiently.
+              </p>
+            </div>
+          </div>
+          <div class="advan">
+            <div class="advansym"><i class="ri-time-line"></i></div>
+            <div class="advandes">
+              <h4>Flexible Hours</h4>
+              <p>Our flexible operating hours accommodate various schedules, making it easier to incorporate fitness
+                into your daily routine.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="advanright">
+          <div class="advan">
+            <div class="advansym"><i class="ri-safe-line"></i></div>
+            <div class="advandes">
+              <h4>Clean and Safe Environment</h4>
+              <p>We maintain a clean and hygienic gym space, prioritizing the safety and well-being of our members.
+              </p>
+            </div>
+          </div>
+          <div class="advan">
+            <div class="advansym"><i class="ri-door-open-line"></i></div>
+            <div class="advandes">
+              <h4>Open Door Policy</h4>
+              <p>We encourage open communication and provide a supportive atmosphere where members' concerns and
+                feedback are valued.
+              </p>
+            </div>
+          </div>
+          <div class="advan">
+            <div class="advansym"><i class="ri-community-line"></i></div>
+            <div class="advandes">
+              <h4>Community and Support</h4>
+              <p>Max Fitness Gym fosters a supportive community of like-minded individuals who motivate and encourage
+                each other.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="member">
+      <div class="memberdes">
+        <div class="des">
+          <i class="ri-team-line"></i>
+          <h1>200+</h1>
+          <p>members</p>
+        </div>
+        <div class="des">
+          <i class="ri-shield-user-line"></i>
+          <h1>20+</h1>
+          <p>trainers</p>
+        </div>
+        <div class="des">
+          <i class="ri-book-open-line"></i>
+          <h1>35+</h1>
+          <p>classes</p>
+        </div>
+      </div>
+    </div>
+    <div class="success">
+      <h1>success stories</h1>
+      <div class="successdes">
+        <div class="successslides">
+          <div class="secimage">
+            <img src="/images/emily.jpg" alt="">
+          </div>
+          <div class="sucdes">
+            <h1>excellent training given by max fitness gym!!</h1>
+            <p>a dedicated member of Max Fitness Gym, transformed her life through consistent workouts and healthy
+              living. Her inspiring journey from a sedentary lifestyle to becoming a fitness enthusiast motivates many
+              in the gym.
+            </p>
+            <h3>Emily</h3>
+          </div>
+        </div>
+        <div class="successslides">
+          <div class="secimage">
+            <img src="/images/david image.jpg" alt="">
+          </div>
+          <div class="sucdes">
+            <h1>excellent training given by max fitness gym!!</h1>
+            <p>a long-time member of Max Fitness Gym, is a shining example of dedication and discipline. He has achieved
+              remarkable weight loss and muscle gain, proving that age is no barrier to success.</p>
+            <h3>David</h3>
+          </div>
+        </div>
+        <div class="successslides">
+          <div class="secimage">
+            <img src="/images/sarah image.jpg" alt="">
+          </div>
+          <div class="sucdes">
+            <h1>excellent training given by max fitness gym!!</h1>
+            <p>a loyal member of Max Fitness Gym, has redefined her health through a holistic approach. Her journey
+              showcases the power of combining nutrition, yoga, and strength training for a balanced lifestyle.</p>
+            <h3>Sarah</h3>
+          </div>
+        </div>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+    <div class="sisthdiv">
+      <h1>our trainers</h1>
+      <div class="trainer">
+        <div class="trainers">
+          <div class="trainerimage">
+            <img src="/images/trainer1.png" alt="">
+          </div>
+          <div class="trainerdes">
+            <h1>Jake Strong</h1>
+            <h5>body building trainer</h5>
+            <p>Jake Strong is a powerhouse of motivation and muscle. He's known for pushing his clients to their limits
+              and helping them discover their inner strength.</p>
+          </div>
+        </div>
+        <div class="trainers" id="trainer2">
+          <div class="trainerimage">
+            <img src="/images/trainer2.png" alt="">
+          </div>
+          <div class="trainerdes">
+            <h1>Sarah Sweatmore</h1>
+            <h5>yoga trainer</h5>
+            <p>Sarah Sweatmore is a cardio and endurance specialist. Her training philosophy is to make you sweat,
+              smile, and surpass your own expectations.</p>
+          </div>
+        </div>
+        <div class="trainers">
+          <div class="trainerimage">
+            <img src="/images/trainer3.png" alt="">
+          </div>
+          <div class="trainerdes">
+            <h1>Mike Muscleman</h1>
+            <h5>body building trainer</h5>
+            <p>Mike Muscleman is all about gains and gains only. He's your go-to trainer for bulking up and sculpting a
+              body that turns heads.</p>
+          </div>
+        </div>
+        <div class="trainers" id="trainer4">
+          <div class="trainerimage">
+            <img src="/images/class3.jpg" alt="">
+          </div>
+          <div class="trainerdes">
+            <h1>Derek Dumbbell</h1>
+            <h5>yoga trainer</h5>
+            <p>Derek Dumbbell is your friendly neighborhood trainer who specializes in working with beginners, helping
+              them become familiar with the gym and achieve their fitness goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+    <div class="footer" id="footer">
+      <div class="firstfooter">
+        <div class="footerlinks">
+          <div class="footerlinklft">
+            <h2>navigation links</h2>
+            <a href="/">home</a>
+            <a href="/about">about</a>
+            <a href="#classes">classes</a>
+            <a href="/price">plans</a>
+          </div>
+          <div class="footerlinkright">
+            <h2>contact us</h2>
+            <span><i class="ri-map-pin-line"></i> location : <span class="des">
+                Max Fitness Gym
+                123 Street No, California,
+                USA
+              </span></span>
+            <span><i class="ri-phone-line"></i> phone number: <span class="des">+1234567890</span> </span>
+            <span><i class="ri-mail-line"></i> email id: <span
+                class="des">maxfittnessgymofficial@gmail.com</span></span>
+          </div>
+        </div>
+        <h1>maxfitnessgym</h1>
+      </div>
+      <div class="mainfooter">
+        @2023, all rights are reserved. made by <span>SARTHAK & ROHIT</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    gsap.from(".logo", {
+      y: -200,
+      duration: 1,
+      opacity: 0,
+    })
+    gsap.from("li", {
+      y: 50,
+      duration: 0.5,
+      opacity: 0,
+      stagger: 0.1,
+      delay: 0.5
+    })
+
+    gsap.from(".search, .login", {
+      y: -100,
+      duration: 1.5,
+      opacity: 0,
+      stagger: 0.2,
+      delay: 0.5
+    })
+    gsap.from(".prev", {
+      x: -100,
+      scale: 0,
+      duration: 1
+    })
+    gsap.from(".next", {
+      x: 100,
+      scale: 0,
+      duration: 1
+    })
+
+    gsap.from(".story", {
+      y: -200,
+      scale: 0,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: ".story",
+        scroll: "body",
+        start: 'top center',
+        end: 'bottom center',
+        scrub: 1,
+      }
+    })
+
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    let successslideIndex = 0;
+    successSlides();
+
+    function successSlides() {
+      let i;
+      const slides = document.getElementsByClassName("successslides");
+      const dots = document.getElementsByClassName("dot");
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      successslideIndex++;
+      if (successslideIndex > slides.length) {
+        successslideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[successslideIndex - 1].style.display = "block";
+      dots[successslideIndex - 1].className += " active";
+      setTimeout(successSlides, 2000);
+    }
+
+
+    function showmenu() {
+      let menu = document.querySelector(".mobilemenubar");
+      let click = document.querySelector("#click");
+      click.addEventListener("click", function () {
+        if (menu.style.display == "block") {
+          menu.style.display = "none";
+          gsap.from(".mobilemenubar", {
+            x: -100,
+            duration: 1,
+            stagger: 0.1
+          })
+        }
+        else {
+          menu.style.display = "block";
+        }
+      })
+    }
+    showmenu()
+  </script>
+</body>
+
+</html>
